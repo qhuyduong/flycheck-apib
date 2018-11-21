@@ -21,7 +21,12 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
+;; Configures Flycheck for apib-mode
+
 ;;; Code:
+
 (require 'flycheck)
 
 (flycheck-define-checker
@@ -41,6 +46,9 @@
 
 ;;;###autoload
 (defun flycheck-apib-setup ()
+  "Setup Flycheck for apib-mode."
   (add-to-list 'flycheck-checkers 'apib-drafter))
 
 (provide 'flycheck-apib)
+
+;;; flycheck-apib.el ends here

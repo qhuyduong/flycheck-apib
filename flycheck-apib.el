@@ -39,6 +39,8 @@
                   )
  :modes apib-mode)
 
-(add-to-list 'flycheck-checkers 'apib-drafter)
+;;;###autoload
+(defun flycheck-apib-setup ()
+  (add-to-list 'flycheck-checkers 'apib-drafter))
 
 (provide 'flycheck-apib)
